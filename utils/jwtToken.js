@@ -4,9 +4,9 @@ module.exports.jwtToken = async (user, message, statusCode, res) => {
     res
         .status(statusCode)
         .cookie("token", token, {
-            httpOnly: true,      // Ensures the cookie is sent in HTTP requests only (not available to JS)
-            secure: true,        // Cookie will only be sent over HTTPS
-            sameSite: "None",    // Allows cross-site cookie
+            httpOnly: true,
+            secure: true,
+            sameSite: "None",
         })
         .json({
             success: true,

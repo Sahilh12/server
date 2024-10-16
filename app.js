@@ -16,7 +16,7 @@ const projectRouter = require('./router/projectRoute.js')
 const skillRouter = require('./router/skillRoute.js')
 
 app.use(cors({
-    origin:'https://phenomenal-manatee-aecf5a.netlify.app',
+    origin:'https://transcendent-fudge-b71fb4.netlify.app',
     methods:["GET" , "POST" , "PATCH" , "PUT" , "DELETE"],
     credentials:true
 }))
